@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Geo IP Library</string>
+    <string name="endpoint">http://ip-api.com/json</string>
+</resources>
