@@ -22,14 +22,14 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-//    private GridLayout mGridLayoutContainer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        mGridLayoutContainer = (GridLayout) findViewById(R.id.gridlayout_container);
+
 
         final TextView textViewInfo = (TextView) findViewById(R.id.textview_info);
 
@@ -39,12 +39,6 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(GeoIpResponseModel response) {
                 textViewInfo.setText(response.getCountryCode());
 
-//                TextView textViewHeader = new TextView(getApplicationContext());
-//                TextView textViewValue = new TextView(getApplicationContext());
-//                textViewValue.setGravity(Gravity.END);
-//
-//                textViewHeader.setText();
-//                textViewValue.setText();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -67,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-
-
 
         return super.onOptionsItemSelected(item);
     }
