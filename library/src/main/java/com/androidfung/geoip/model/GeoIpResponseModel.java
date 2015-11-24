@@ -31,6 +31,11 @@ public class GeoIpResponseModel {
     private String timezone;
     private String message;
 
+    @Override
+    public String toString(){
+        return "countryCode: " + countryCode + ", isp: " + isp + ", city: " + city;
+    }
+
     public Status getStatus() {
         return status;
     }

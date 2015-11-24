@@ -22,14 +22,12 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-//    private GridLayout mGridLayoutContainer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        mGridLayoutContainer = (GridLayout) findViewById(R.id.gridlayout_container);
 
         final TextView textViewInfo = (TextView) findViewById(R.id.textview_info);
 
@@ -37,14 +35,9 @@ public class MainActivity extends AppCompatActivity {
         apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
             @Override
             public void onResponse(GeoIpResponseModel response) {
-                textViewInfo.setText(response.getCountryCode());
+                textViewInfo.setText(response.toString());
 
-//                TextView textViewHeader = new TextView(getApplicationContext());
-//                TextView textViewValue = new TextView(getApplicationContext());
-//                textViewValue.setGravity(Gravity.END);
-//
-//                textViewHeader.setText();
-//                textViewValue.setText();
+
             }
         }, new Response.ErrorListener() {
             @Override

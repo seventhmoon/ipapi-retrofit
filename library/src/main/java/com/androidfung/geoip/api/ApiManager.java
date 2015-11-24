@@ -22,9 +22,9 @@ import java.util.TreeMap;
  */
 public class ApiManager {
 
-    public final String TAG = ApiManager.class.getSimpleName();
+    private static final String TAG = ApiManager.class.getSimpleName();
 
-    private final String ENDPOINT = "http://ip-api.com/json";
+    private static final String ENDPOINT = "http://ip-api.com/json";
     private RequestQueue mRequestQueue;
 
     public ApiManager(RequestQueue requestQueue) {
@@ -39,11 +39,11 @@ public class ApiManager {
     }
 
 
-    private String toUrlParams(Map<String, String> params) {
+    private static String toUrlParams(Map<String, String> params) {
         StringBuffer sb = new StringBuffer();
         for (String key : params.keySet()) {
             try {
-                sb.append("&" + key + "=" + URLEncoder.encode(params.get(key), "utf-8"));
+                sb.append("&").append(key).append("=").append(URLEncoder.encode(params.get(key), "utf-8"));
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
