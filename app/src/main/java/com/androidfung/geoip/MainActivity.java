@@ -18,7 +18,6 @@ import com.android.volley.toolbox.Volley;
 import com.androidfung.geoip.api.ApiManager;
 import com.androidfung.geoip.model.GeoIpResponseModel;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        
         final TextView textViewInfo = (TextView) findViewById(R.id.textview_info);
 
         ApiManager apiManager = new ApiManager(Volley.newRequestQueue(this));
@@ -36,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(GeoIpResponseModel response) {
                 textViewInfo.setText(response.toString());
-
-
+                
             }
         }, new Response.ErrorListener() {
             @Override
@@ -60,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-
-
 
         return super.onOptionsItemSelected(item);
     }
