@@ -7,7 +7,7 @@ Sample Application is included in [app](https://github.com/seventhmoon/GeoIp-and
 
 ### How to use
        ApiManager apiManager = new ApiManager(Volley.newRequestQueue(context));
-        apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
+       apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
             @Override 
             public void onResponse(GeoIpResponseModel response) {
                 //This is how you get the Country Code
