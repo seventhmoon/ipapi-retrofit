@@ -24,6 +24,6 @@ Sample Application is included in [app](https://github.com/seventhmoon/GeoIp-and
         }, new Response.ErrorListener() {
             @Override 
             public void onErrorResponse(VolleyError error) {
-                textViewInfo.setText(error.toString());
+                String errorMessage = error.toString();
             } 
         }); 
