@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         
-        final TextView textViewInfo = (TextView) findViewById(R.id.textview_info);
+//        final TextView textViewInfo = (TextView) findViewById(R.id.textview_info);
 
         ApiManager apiManager = new ApiManager(Volley.newRequestQueue(this));
         apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                textViewInfo.setText(error.toString());
+//                textViewInfo.setText(error.toString());
+                Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();
             }
         });
 

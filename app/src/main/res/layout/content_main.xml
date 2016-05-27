@@ -26,80 +26,173 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <GridLayout
+            <android.support.v7.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="1"
-                android:orientation="horizontal">
+                app:columnCount="1"
+                app:orientation="horizontal">
 
+                <android.support.v7.widget.CardView
 
-                <TextView
-                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{response.query}" />
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:layout_columnWeight="3">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.as}" />
+                    <android.support.v7.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:columnCount="2"
+                        app:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.city}" />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="IP Address"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.country}" />
+                        <TextView
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.countryCode}" />
+                            android:layout_height="wrap_content"
+                            android:text="@{response.query}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.isp}" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{String.valueOf(response.latitude)}" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{String.valueOf(response.longitude)}" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.org}" />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Latlong"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.region}" />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text='@{String.valueOf(response.latitude) +", " + String.valueOf(response.longitude)}'
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.regionName}" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{response.timezone}" />
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Region"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:visibility="gone"
+                            app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textview_info"
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.region}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:visibility="gone"
+                            app:layout_columnWeight="2" />
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"/>
-            </GridLayout>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Region"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.regionName}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.city}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.country}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Country Code"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:visibility="gone"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.countryCode}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:visibility="gone"
+                            app:layout_columnWeight="2" />
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Time Zone"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.timezone}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="AS"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.as}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="ISP"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.isp}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Organization"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:layout_columnWeight="1" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="@{response.org}"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:layout_columnWeight="2" />
+
+                    </android.support.v7.widget.GridLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </android.support.v7.widget.GridLayout>
 
 
         </android.support.v4.widget.NestedScrollView>
