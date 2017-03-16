@@ -4,17 +4,15 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.Volley;
-import com.androidfung.geoip.api.ApiManager;
 import com.androidfung.geoip.databinding.ActivityMainBinding;
 import com.androidfung.geoip.model.GeoIpResponseModel;
+
+import retrofit2.Call;
+import retrofit2.Callback;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,22 +29,36 @@ public class MainActivity extends AppCompatActivity {
         
 //        final TextView textViewInfo = (TextView) findViewById(R.id.textview_info);
 
-        ApiManager apiManager = new ApiManager(Volley.newRequestQueue(this));
-        apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
+        IpApiService ipApiService = ServicesManager.getGeoIpService();
+
+        ipApiService.getGeoIp().enqueue(new Callback<GeoIpResponseModel>() {
             @Override
-            public void onResponse(GeoIpResponseModel response) {
-                Log.d(TAG, String.valueOf(response==null));
-//                textViewInfo.setText(response.toString());
-                binding.setResponse(response);
-//                binding.setVariable("response", response);
+            public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
+                binding.setResponse(response.body());
             }
-        }, new Response.ErrorListener() {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
-//                textViewInfo.setText(error.toString());
-                Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<GeoIpResponseModel> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.toString(), Toast.LENGTH_SHORT).show();
             }
         });
+
+//        ApiManager apiManager = new ApiManager(Volley.newRequestQueue(this));
+//        apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
+//            @Override
+//            public void onResponse(GeoIpResponseModel response) {
+//                Log.d(TAG, String.valueOf(response==null));
+////                textViewInfo.setText(response.toString());
+//                binding.setResponse(response);
+////                binding.setVariable("response", response);
+//            }
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+////                textViewInfo.setText(error.toString());
+//                Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 

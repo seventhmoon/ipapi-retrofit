@@ -40,7 +40,7 @@ public class ApiManager {
 
 
     private static String toUrlParams(Map<String, String> params) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for (String key : params.keySet()) {
             try {
                 sb.append("&").append(key).append("=").append(URLEncoder.encode(params.get(key), "utf-8"));

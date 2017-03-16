@@ -30,6 +30,7 @@
 
         </android.support.design.widget.AppBarLayout>
 
+        <!--suppress AndroidUnknownAttribute -->
         <include layout="@layout/content_main" bind:response="@{response}"/>
 
     </android.support.design.widget.CoordinatorLayout>
