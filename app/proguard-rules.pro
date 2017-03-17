@@ -42,3 +42,28 @@
 
 -dontnote libcore.icu.ICU
 -dontnote sun.misc.Unsafe
+
+# OkHttp3 rules from https://github.com/krschultz/android-proguard-snippets/blob/master/libraries/proguard-square-okhttp3.pro
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class okhttp3.** { *; }
+-keep interface okhttp3.** { *; }
+-dontwarn okhttp3.**
+
+# Okio rules from https://github.com/krschultz/android-proguard-snippets/blob/master/libraries/proguard-square-okio.pro
+-keep class sun.misc.Unsafe { *; }
+-dontwarn java.nio.file.*
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+-dontwarn okio.**
+
+# Retrofit 2 rules from https://github.com/krschultz/android-proguard-snippets/blob/master/libraries/proguard-square-retrofit2.pro
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+-keepclasseswithmembers class * {
+   @retrofit2.http.* <methods>;
+}
+
+# Keep the pojos and enums used by GSON
+-keep class com.futurice.freesound.network.api.model.** { *; }
