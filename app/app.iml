@@ -122,8 +122,5 @@
     <orderEntry type="library" exported="" name="support-annotations-25.3.0" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-25.3.0" level="project" />
     <orderEntry type="module" module-name="library" exported="" />
-    <orderEntry type="library" exported="" name="gson-2.8.0" level="project" />
-    <orderEntry type="library" exported="" name="retrofit-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="converter-gson-2.2.0" level="project" />
   </component>
 </module>
