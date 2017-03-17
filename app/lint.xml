@@ -4,5 +4,6 @@
             <ignore regexp="okio.*jar" />
             <ignore regexp="retrofit.*jar" />
             <ignore regexp="simple-xml.*jar" />
+            <ignore regexp="baseLibrary.*jar" />
         </issue>
     </lint>
