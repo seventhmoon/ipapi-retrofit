@@ -39,3 +39,6 @@
 -keep class * implements com.google.gson.TypeAdapterFactory
 -keep class * implements com.google.gson.JsonSerializer
 -keep class * implements com.google.gson.JsonDeserializer
+
+-dontnote libcore.icu.ICU
+-dontnote sun.misc.Unsafe

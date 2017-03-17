@@ -41,3 +41,5 @@
 -keep class * implements com.google.gson.JsonDeserializer
 
 
+-dontnote libcore.icu.ICU
+-dontnote sun.misc.Unsafe
