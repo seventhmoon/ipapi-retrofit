@@ -1,19 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
 
     defaultConfig {
         applicationId "com.androidfung.geoip"
         minSdkVersion 17
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 3
         versionName "1.0.0.0528"
         resConfigs "en"
-        jackOptions {
-            enabled = false
-        }
+//        jackOptions {
+//            enabled = false
+//        }
         dataBinding {
             enabled = true
         }
@@ -30,12 +30,12 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile project(':library')
-    compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support:design:25.3.0'
-    compile 'com.android.support:support-annotations:25.3.0'
+    compile 'com.android.support:appcompat-v7:26.0.0-beta2'
+    compile 'com.android.support:design:26.0.0-beta2'
+    compile 'com.android.support:support-annotations:26.0.0-beta2'
     compile 'com.android.volley:volley:1.0.0'
-    compile 'com.android.support:cardview-v7:25.3.0'
-    compile 'com.android.support:gridlayout-v7:25.3.0'
+    compile 'com.android.support:cardview-v7:26.0.0-beta2'
+    compile 'com.android.support:gridlayout-v7:26.0.0-beta2'
 
-    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
 }
