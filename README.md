@@ -25,27 +25,24 @@ Step 2. Add the dependency
 	dependencies {
 	        compile 'com.github.seventhmoon:GeoIp-android:1.0.0'
 	}
-	
+	     
 ### How to use
-       ApiManager apiManager = new ApiManager(Volley.newRequestQueue(context));
-       apiManager.getGeoIpInfo(new Response.Listener<GeoIpResponseModel>() {
+        IpApiService ipApiService = ServicesManager.getGeoIpService();
+       	ipApiService.getGeoIp().enqueue(new Callback<GeoIpResponseModel>() {
             @Override
-            public void onResponse(GeoIpResponseModel response) {
-                //This is how you get the information.
-                //not all attribute are listed
-                String country = response.getCountry();
-                String city = response.getCity();
-                String countryCode = resopnse.getCountryCode();
-                double latitude = response.getLatitude();
-                double longtidue = response.getLongitude();
-                String region = response.getRegion();
-                String timezone = response.getTimezone();
-                String isp = response.getIsp();
+            public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
+         	String country = response.body().getCountry();
+                String city = response.body().getCity();
+                String countryCode = resopnse.body().getCountryCode();
+                double latitude = response.body().getLatitude();
+                double longtidue = response.body().getLongitude();
+                String region = response.body().getRegion();
+                String timezone = response.body().getTimezone();
+                String isp = response.body().getIsp();
             }
-        }, new Response.ErrorListener() {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
-                String errorMessage = error.toString();
+            public void onFailure(Call<GeoIpResponseModel> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.toString(), Toast.LENGTH_SHORT).show();
             }
         });
-
