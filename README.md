@@ -1,5 +1,5 @@
 ### Welcome to GeoIp-android 
-This is a wrapper of [IP-API](http://ip-api.com/json) for Android platform using Volley.
+This is a wrapper of [IP-API](http://ip-api.com/json) for Android platform using Retrofit.
 In simple words, get your location information by IP address.
 
 [![](https://jitpack.io/v/seventhmoon/GeoIp-android.svg)](https://jitpack.io/#seventhmoon/GeoIp-android)
