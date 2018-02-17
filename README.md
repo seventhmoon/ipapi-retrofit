@@ -1,11 +1,12 @@
-### Welcome to GeoIp-android 
+### Welcome to IpApi-retrofit
 This is a wrapper of [IP-API](http://ip-api.com/json) for Android platform using Retrofit.
 In simple words, get your location information by IP address.
+(for volley version, please visit https://github.com/seventhmoon/ipapi-volley)
 
-[![](https://jitpack.io/v/seventhmoon/GeoIp-android.svg)](https://jitpack.io/#seventhmoon/GeoIp-android)
+[![](https://jitpack.io/v/seventhmoon/ipapi-retrofit.svg)](https://jitpack.io/#seventhmoon/ipapi-retrofit)
 
 ### Sample Application
-Sample Application is included in [app](https://github.com/seventhmoon/GeoIp-android/tree/master/app)
+Sample Application is included in [app](https://github.com/seventhmoon/IpApi-retrofit/tree/master/app)
 
 ### How to install
 
@@ -25,7 +26,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.seventhmoon:GeoIp-android:v1.2'
+	        compile 'com.github.seventhmoon:ipapi-retrofit:v1.2'
 	}
 	     
 ### How to use
