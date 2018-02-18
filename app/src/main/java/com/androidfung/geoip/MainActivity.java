@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.androidfung.geoip.databinding.ActivityMainBinding;
 import com.androidfung.geoip.model.GeoIpResponseModel;
 
 import retrofit2.Call;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final ViewDataBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        final ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -31,31 +32,18 @@ public class MainActivity extends AppCompatActivity {
         ipApiService.getGeoIp().enqueue(new Callback<GeoIpResponseModel>() {
             @Override
             public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
-                binding.setVariable(com.androidfung.geoip.BR.response, response.body());
-
+                binding.setResponse(response.body());
             }
 
             @Override
             public void onFailure(Call<GeoIpResponseModel> call, Throwable t) {
-                Toast.makeText(getApplicationContext(), t.toString(), Toast.LENGTH_SHORT).show();
+                showError(t);
             }
         });
-
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+    private void showError(Throwable t){
+        Toast.makeText(this, t.toString(), Toast.LENGTH_SHORT).show();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
-        return super.onOptionsItemSelected(item);
     }
 }
