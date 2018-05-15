@@ -19,10 +19,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    provided 'com.google.code.gson:gson:2.8.1'
-    provided 'com.squareup.retrofit2:retrofit:2.3.0'
-    provided 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
 
 }
