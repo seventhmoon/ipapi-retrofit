@@ -26,7 +26,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.seventhmoon:ipapi-retrofit:1.3'
+	        compile 'com.github.seventhmoon:ipapi-retrofit:1.3.1'
 	}
 	     
 ### How to use
