@@ -12,4 +12,7 @@ import retrofit2.http.GET;
 public interface IpApiService {
     @GET("json")
     Call<GeoIpResponseModel> getGeoIp();
+
+    @GET("json/{ipAddress}")
+    Call<GeoIpResponseModel> getGeoIp(String ipAddress);
 }
