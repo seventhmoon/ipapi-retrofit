@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '28.0.1'
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.androidfung.geoip"
@@ -31,11 +31,11 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     implementation project(':library')
-    implementation 'androidx.appcompat:appcompat:1.0.0-rc01'
-    implementation 'com.google.android.material:material:1.0.0-rc01'
-    implementation 'androidx.annotation:annotation:1.0.0-rc01'
-    implementation 'androidx.cardview:cardview:1.0.0-rc01'
-    implementation 'androidx.gridlayout:gridlayout:1.0.0-rc01'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
 
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
