@@ -5,6 +5,8 @@ import androidx.databinding.ViewDataBinding;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -33,17 +35,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
                 binding.setResponse(response.body());
+                if (response.body().isError()){
+                   showError(response.body().getReason());
+                }
             }
 
             @Override
             public void onFailure(Call<GeoIpResponseModel> call, Throwable t) {
-                showError(t);
+                showError(t.toString());
             }
         });
     }
 
-    private void showError(Throwable t){
-        Toast.makeText(this, t.toString(), Toast.LENGTH_SHORT).show();
+
+
+    private void showError(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
 
     }
 }

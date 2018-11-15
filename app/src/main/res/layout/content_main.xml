@@ -53,7 +53,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@{response.query}"
+                            android:text="@{response.ip}"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <androidx.legacy.widget.Space
@@ -86,7 +86,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@{response.regionName}"
+                            android:text="@{response.region}"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <androidx.legacy.widget.Space
@@ -151,24 +151,24 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@{response.as}"
+                            android:text="@{response.asn}"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <androidx.legacy.widget.Space
                             android:layout_width="match_parent"
                             android:layout_height="8dp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ISP"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="ISP"-->
+                            <!--android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@{response.isp}"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@{response.org}"-->
+                            <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium" />-->
 
                         <androidx.legacy.widget.Space
                             android:layout_width="match_parent"
