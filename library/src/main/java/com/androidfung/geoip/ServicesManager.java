@@ -11,13 +11,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ServicesManager {
 
 //    private static final String BASE_URL = "http://ip-api.com/";
-    private static final String BASE_URL = "https://ipapi.co/json/";
+    private static final String BASE_URL = "https://ipapi.co/";
 
-    public static IpApiService getGeoIpService(){
+    public static GeoIpService getGeoIpService(){
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-                .create(IpApiService.class);
+                .create(GeoIpService.class);
     }
 }

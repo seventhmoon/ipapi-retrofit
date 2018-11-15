@@ -10,7 +10,7 @@ import retrofit2.http.Path;
  * Created by funglam on 3/16/17.
  */
 @SuppressWarnings("unused")
-public interface IpApiService {
+public interface GeoIpService {
     @GET("json")
     Call<GeoIpResponseModel> getGeoIp();
 
