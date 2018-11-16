@@ -1,14 +1,12 @@
 package com.androidfung.geoip;
 
 import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
+
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.androidfung.geoip.databinding.ActivityMainBinding;
@@ -29,20 +27,24 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        IpApiService ipApiService = ServicesManager.getGeoIpService();
+        GeoIpService ipApiService = ServicesManager.getGeoIpService();
 
         ipApiService.getGeoIp().enqueue(new Callback<GeoIpResponseModel>() {
             @Override
             public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
                 binding.setResponse(response.body());
+                Log.d(TAG, response.toString());
+//                Log.d(TAG, response.body().toString());
                 if (response.body().isError()){
                    showError(response.body().getReason());
+                   Log.e(TAG, response.body().getReason());
                 }
             }
 
             @Override
             public void onFailure(Call<GeoIpResponseModel> call, Throwable t) {
                 showError(t.toString());
+                Log.e(TAG, t.toString());
             }
         });
     }
