@@ -1,5 +1,5 @@
 ### Welcome to IpApi-retrofit
-This is a wrapper of [IP-API](http://ip-api.com/json) for Android platform using Retrofit.
+This is a wrapper of [IP-API](http://ipapi.co/json) for Android platform using Retrofit.
 In simple words, get your location information by IP address.
 (for volley version, please visit https://github.com/seventhmoon/ipapi-volley)
 
@@ -26,12 +26,12 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.seventhmoon:ipapi-retrofit:1.3.2'
+	        compile 'com.github.seventhmoon:ipapi-retrofit:1.4.0'
 	}
 	     
 ### How to use
 
-      IpApiService ipApiService = ServicesManager.getGeoIpService();
+      GeoIpService ipApiService = ServicesManager.getGeoIpService();
       ipApiService.getGeoIp().enqueue(new Callback<GeoIpResponseModel>() {
           @Override
           public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
