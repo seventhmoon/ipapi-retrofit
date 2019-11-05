@@ -35,9 +35,9 @@ Step 2. Add the dependency
       ipApiService.getGeoIp().enqueue(new Callback<GeoIpResponseModel>() {
           @Override
           public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
-              String country = response.body().getCountry();
+              String countryName = response.body().getCountryName();
               String city = response.body().getCity();
-              String countryCode = resopnse.body().getCountryCode();
+              String country = resopnse.body().getCountry();
               double latitude = response.body().getLatitude();
               double longtidue = response.body().getLongitude();
               String region = response.body().getRegion();
