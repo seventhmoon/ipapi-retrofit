@@ -41,8 +41,8 @@ public class GeoIpResponseModel {
     private String country;
     @SerializedName("country_name")
     private String countryName;
-    @SerializedName("country_code")
-    private String countryCode;
+    @SerializedName("continent_code")
+    private String continentCode;
     private String postal;
     private double latitude;
     private double longitude;
@@ -124,12 +124,12 @@ public class GeoIpResponseModel {
         this.countryName = countryName;
     }
 
-    public String getCountryCode() {
-        return countryCode;
+    public String getContinentCode() {
+        return continentCode;
     }
 
-    public void setCountryCode(String countryCode) {
-        this.countryCode = countryCode;
+    public void setContinentCode(String continentCode) {
+        this.continentCode = continentCode;
     }
 
     public String getPostal() {
