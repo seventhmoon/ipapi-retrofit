@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<GeoIpResponseModel> call, retrofit2.Response<GeoIpResponseModel> response) {
                 binding.setResponse(response.body());
                 Log.d(TAG, response.toString());
+                Log.d(TAG, response.body().toString());
 //                Log.d(TAG, response.body().toString());
                 if (response.body().isError()){
                    showError(response.body().getReason());
