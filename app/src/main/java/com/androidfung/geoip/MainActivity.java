@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 binding.setResponse(response.body());
                 Log.d(TAG, response.toString());
                 Log.d(TAG, response.body().toString());
-//                Log.d(TAG, response.body().toString());
                 if (response.body().isError()){
                    showError(response.body().getReason());
                    Log.e(TAG, response.body().getReason());
