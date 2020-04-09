@@ -5,7 +5,7 @@ import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 
 /**
- * Created by fung.lam on 17/11/2015.
+ * Created by fung on 17/11/2015.
  */
 @Keep
 data class GeoIpResponseModel(

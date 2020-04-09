@@ -7,7 +7,6 @@ import retrofit2.converter.gson.GsonConverterFactory
  * Created by funglam on 3/16/17.
  */
 object ServicesManager {
-    //    private static final String BASE_URL = "http://ip-api.com/";
     private const val BASE_URL = "https://ipapi.co/"
 
     @JvmStatic
