@@ -24,6 +24,45 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/f1f70689e48d77c43e06c7cb00e686e3/databinding-adapters-4.0.0-beta04-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/efcb9a1ce8ffe1079183435b826970d1/databinding-runtime-4.0.0-beta04-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/4.0.0-beta04/5edb767a07aa28fef4f0fce7ad5eab5d3e1cbf17/databinding-common-4.0.0-beta04.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/a9701379319d123b3e81173dd0c7d089/jetified-viewbinding-4.0.0-beta04-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/87a8f0531a5bb113506fb6eecdcc0fbb/material-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5947fd42d13e0baa0fa1287b4ea362e1/appcompat-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/4f778a6f9be06cadc202dfd8a70157d6/cardview-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/c78a053cf3f2d9945e151c6ffd641c9e/gridlayout-1.0.0-api.jar:/Users/chofung/StudioProjects/ipapi-retrofit/library/build/intermediates/compile_library_classes_jar/debug/classes.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/973543531d4dd803c2db0c671fb73b5f/jetified-core-ktx-1.2.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/b6c8f7af30d40119ed56b5e59562cc8c/jetified-viewpager2-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/1726c85b98e81bf13c1c54f764a1c08a/fragment-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ea3959b8df4e020da42fc69feadb30e6/jetified-appcompat-resources-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5618579913748a33f541fcaba58fc6d9/legacy-support-core-ui-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/43441254d0e2b628a3af49f94d28c104/drawerlayout-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/02530948d32c70fd729393935005a77b/coordinatorlayout-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ad0f638634cf5403a01670cf1e794b37/recyclerview-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/152d34ed08778cf9355735a12ffd5497/transition-1.2.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/a0c10f583ecb314f10322e808bdda354/vectordrawable-animated-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/a46f1824199f63403608dae4081f4365/vectordrawable-1.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/42c4401cd059a15ff9574c816dec2564/viewpager-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/8dd49a3681e8e859f699d62a997b9168/legacy-support-core-utils-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/8f0e6343ff4b17b1dc7180ad28b10341/loader-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/d383aa3f8ede82642841202baf2ed1ed/jetified-activity-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/61b71c081dd7da2bbb67e4cbb2aedc54/slidingpanelayout-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/03514ed3f2fa837d647fb08ba8aadb10/customview-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/e11a4a8b95b1c4017ee2d895e609627b/swiperefreshlayout-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/2f89a7b586f5b6c75d556a9c012e416d/asynclayoutinflater-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/73d713d341937975bf3ea5496200a573/core-1.2.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/258ce36271baf0c1a28af348d09fd0e9/lifecycle-runtime-2.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/33e25c9d55095f925d38ab25c153155b/versionedparcelable-1.1.0-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/f2baa0b807ad0f07636bf566dbe55b4e/cursoradapter-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/f546e068edb3b9ce6734388c7847c2bc/jetified-savedstate-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/974037f27d7e9187c0cfc104b45bb4ad/lifecycle-livedata-2.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/c241ba8ccc7649f92abaef5a478ff336/lifecycle-livedata-core-2.0.0-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.1.0/c67e7807d9cd6c329b9d0218b2ec4e505dd340b7/lifecycle-common-2.1.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/4676a5d0e67f5d5c599e1e8744d7adc3/core-runtime-2.0.0-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/2ef699a09716a1213d75dbd69a40d694/lifecycle-viewmodel-2.1.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/f91fdf7d4b48f1bc6f4e4cffe56cc4ab/interpolator-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ad4238e228aa4b53eebbd6e32d7b59ba/documentfile-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/addaa462c32e463f8af1551a251bd693/localbroadcastmanager-1.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ff50a6db7fc4aef2866ae19eb7592857/print-1.0.0-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/d9289bd7fc01df7c2f55b3d0ed0c1d5b/jetified-kotlin-android-extensions-runtime-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/c2c5992b8a57dc49548ee30b1fcbdc70/jetified-converter-gson-2.8.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ee4bdcd122f01cd36a64e0ea322c41f2/jetified-retrofit-2.8.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/c6562a2fd25fd8773bf1d00e254d005c/jetified-okhttp-4.4.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5cb80481434b2b5cbe6ebf6d2a9ee475/jetified-kotlin-stdlib-jdk8-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/a4972e5c50de96f406c8f0f1d93cac54/jetified-okio-jvm-2.4.3.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/f77c7cdf3638fc8086626247fa320d1d/jetified-kotlin-stdlib-jdk7-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5c82adda69ef0c1c8c0fb0817bf07e78/jetified-kotlin-stdlib-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/0b8f364e20e5dcddcf09a14859c3a3f6/jetified-kotlin-stdlib-common-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/7ecf6a967567c11aec86684b9831d944/jetified-annotations-13.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/74dab483a099a102a9015c5e3a801ddb/jetified-gson-2.8.6.jar:/Users/chofung/Library/Android/sdk/platforms/android-29/android.jar:/Users/chofung/Library/Android/sdk/build-tools/29.0.3/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20181211/216c2e14b070f334479d800987affe4054cd563f/trove4j-1.0.20181211.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.71/ea43e0e563e1915ea845a482fd6f31a948386ab9/kotlin-android-extensions-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.71/df961ae412445788a38170e27f90bad4e0824153/kotlin-compiler-embeddable-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.3.71/9729c4da2369c4cb84514297f6c652e05dc49d6b/kotlin-daemon-embeddable-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.71/fca74670d8e6906a3241b3cf3732409ca77b2508/kotlin-reflect-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.71/7f5522e7a9d1736fabfdb4335630f64504ce8f20/kotlin-script-runtime-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.71/e71c3fef58e26affeb03d675e91fd8abdd44aa7b/kotlin-stdlib-common-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.71/898273189ad22779da6bed88ded39b14cb5fd432/kotlin-stdlib-1.3.71.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/build/intermediates/javac/debug/classes" />
@@ -94,11 +133,12 @@
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.8.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.8.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:4.4.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:2.4.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.71@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:2.4.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.71@jar" level="project" />
