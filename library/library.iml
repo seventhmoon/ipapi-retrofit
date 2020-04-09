@@ -4,8 +4,8 @@
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":library" />
-        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="4.0.0-beta03" />
-        <option name="LAST_KNOWN_AGP_VERSION" value="4.0.0-beta03" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="4.0.0-beta04" />
+        <option name="LAST_KNOWN_AGP_VERSION" value="4.0.0-beta04" />
       </configuration>
     </facet>
     <facet type="android" name="Android">
@@ -26,16 +26,17 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$MODULE_DIR$/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/83253ee80478becd4b422bbb07733b63/jetified-converter-gson-2.8.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/a319c3ff8cb72de9c02514568f8bf8bc/jetified-retrofit-2.8.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/a54abfbdebe824b90e67662d10c0b4e2/jetified-okhttp-3.14.7.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/54f9bb0069c14e70c9337dd6a1746d5c/jetified-okio-1.17.2.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5e0f988bfa42a3d6f72526f78c31e2e4/jetified-gson-2.8.5.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/14cf80edbbf6d08ca126ad43c4c29994/jetified-core-ktx-1.3.0-alpha02-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/28911672576f512c04f57b4b25e1a29c/jetified-kotlin-stdlib-jdk7-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/8ff74754f1c565f4efa36820d685e241/jetified-kotlin-stdlib-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/1b765c2b28e2001ccfdc7c4de75afb34/jetified-kotlin-stdlib-common-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/0435ce91e20c1bdb8ada37ccd1b9f643/jetified-annotations-13.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/3a3bbb3222a74289329637d2ea11d382/core-1.3.0-alpha02-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/0a71a9320c3ff0d5873fde9226490b53/lifecycle-runtime-2.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/3dc3643eb8dcd6399e89112868b754af/versionedparcelable-1.1.0-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar:/Users/chofung/Library/Android/sdk/platforms/android-29/android.jar" />
+          <option name="classpath" value="$MODULE_DIR$/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/c2c5992b8a57dc49548ee30b1fcbdc70/jetified-converter-gson-2.8.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ee4bdcd122f01cd36a64e0ea322c41f2/jetified-retrofit-2.8.1.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/973543531d4dd803c2db0c671fb73b5f/jetified-core-ktx-1.2.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5cb80481434b2b5cbe6ebf6d2a9ee475/jetified-kotlin-stdlib-jdk8-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/ad7e958c856d55ae5f2de60c640b1ef4/jetified-okhttp-3.14.7.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/548d31881364476b881c66b4ecc04037/jetified-okio-1.17.2.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/854a7dd73328939ab94c3aeb17bdf61a/jetified-gson-2.8.5.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/d9289bd7fc01df7c2f55b3d0ed0c1d5b/jetified-kotlin-android-extensions-runtime-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/f77c7cdf3638fc8086626247fa320d1d/jetified-kotlin-stdlib-jdk7-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/5c82adda69ef0c1c8c0fb0817bf07e78/jetified-kotlin-stdlib-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/0b8f364e20e5dcddcf09a14859c3a3f6/jetified-kotlin-stdlib-common-1.3.71.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/7ecf6a967567c11aec86684b9831d944/jetified-annotations-13.0.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/73d713d341937975bf3ea5496200a573/core-1.2.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/cd5668f07250c5509766f3a62ca8cdb3/lifecycle-runtime-2.0.0-api.jar:/Users/chofung/.gradle/caches/transforms-2/files-2.1/33e25c9d55095f925d38ab25c153155b/versionedparcelable-1.1.0-api.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar:/Users/chofung/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar:/Users/chofung/Library/Android/sdk/platforms/android-29/android.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="library_debug" />
+          <option name="jvmTarget" value="1.8" />
           <option name="languageVersion" value="1.3" />
           <option name="apiVersion" value="1.3" />
           <option name="pluginOptions">
@@ -131,9 +132,11 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.8.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:retrofit:2.8.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.14.7@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.17.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.5@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.71@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.71@jar" level="project" />
@@ -142,8 +145,8 @@
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.core:core-ktx:1.3.0-alpha02@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.core:core:1.3.0-alpha02@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core-ktx:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
   </component>

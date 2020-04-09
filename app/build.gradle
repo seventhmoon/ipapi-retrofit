@@ -11,12 +11,17 @@ android {
         versionCode 6
         versionName "1.4.6.191105"
         resConfigs "en"
-        dataBinding {
-            enabled = true
+        buildFeatures {
+            viewBinding = false
+            dataBinding = true
         }
     }
     buildTypes {
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
