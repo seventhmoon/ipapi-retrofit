@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d(TAG, response.body().toString())
                 if (response.body()!!.isError) {
                     showError(response.body()!!.reason)
-                    Log.e(TAG, response.body()!!.reason)
+                    Log.e(TAG, response.body()!!.reason.toString())
                 }
             }
 
