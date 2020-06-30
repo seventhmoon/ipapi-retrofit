@@ -24,10 +24,14 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<GeoIpResponseModel>, response: Response<GeoIpResponseModel>) {
                 binding.response = response.body()
                 Log.d(TAG, response.toString())
-                Log.d(TAG, response.body().toString())
-                if (response.body()!!.isError) {
-                    showError(response.body()!!.reason)
-                    Log.e(TAG, response.body()!!.reason.toString())
+
+                response.body()?.let {
+                    Log.d(TAG, it.toString())
+//                    Log.d(TAG, it.body().toString())
+                    if (it.isError) {
+                        showError(it.reason)
+                        Log.e(TAG, it.reason.toString())
+                    }
                 }
             }
 

@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '29.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.0'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 6
         versionName "1.4.6.191105"
     }
@@ -25,10 +25,10 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
-    api 'com.squareup.retrofit2:retrofit:2.8.1'
-    api 'com.squareup.retrofit2:converter-gson:2.8.1'
-    api 'androidx.core:core-ktx:1.2.0'
+    testImplementation 'junit:junit:4.13'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'androidx.core:core-ktx:1.3.0'
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
 }
